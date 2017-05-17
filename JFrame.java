@@ -21,11 +21,10 @@ public class JFrame extends javax.swing.JFrame {
 			public void run() {
 				try {
 					JFrame frame = new JFrame();
-					frame.add(g);
 					frame.setTitle("Battleship!");
 					//frame.add(inframe);
 					frame.setVisible(true);
-					
+					frame.add(g);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
