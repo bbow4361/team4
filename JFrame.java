@@ -23,8 +23,10 @@ public class JFrame extends javax.swing.JFrame {
 					JFrame frame = new JFrame();
 					frame.setTitle("Battleship!");
 					//frame.add(inframe);
-					frame.setVisible(true);
 					frame.add(g);
+					frame.setVisible(true);
+					frame.setBounds(50, 50, (int) (50*11.6), 50*12);
+					frame.setResizable(false);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
