@@ -1,15 +1,25 @@
 package JFrame_Tests;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
+
 import JFrame_Tests.Graphics1;
 import java.awt.EventQueue;
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 
 public class JFrame extends javax.swing.JFrame {
 
 	private JPanel contentPane;
-	static Graphics1 g = new Graphics1();
+	static Component g = new Graphics1();
+	static ShipReader ship = new ShipReader();
+	
 	
 	
 
@@ -24,6 +34,7 @@ public class JFrame extends javax.swing.JFrame {
 					frame.setTitle("Battleship!");
 					//frame.add(inframe);
 					frame.add(g);
+					frame.add(ship);
 					frame.setVisible(true);
 					frame.setBounds(50, 50, (int) (50*11.6), 50*12);
 					frame.setResizable(false);
